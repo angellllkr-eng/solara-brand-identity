@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOLARA — Brand Identity</title>
+  <meta name="description" content="SOLARA brand identity — Radiant Precision & Terra Lumen. Premium portable solar energy & outdoor lifestyle." />
+  <meta name="theme-color" content="#0A1628" />
+  <style>
+    :root {
+      --navy: #0A1628;
+      --gold: #F5C518;
+      --steel: #A8B5C4;
+      --white: #FFFFFF;
+      --forest: #2C3E2D;
+      --terracotta: #E8A87C;
+      --cream: #F5E6D3;
+      --soft-gold: #C9A227;
+      --sage: #A8B5A0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.5;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    header {
+      padding: 2rem 1.5rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      font-size: 1.25rem;
+    }
+    .brand-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 16px rgba(245,197,24,0.6);
+    }
+    nav { display: flex; gap: 1.25rem; font-size: 0.9rem; color: var(--steel); }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      color: var(--steel);
+      font-size: 1.05rem;
+      max-width: 34rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.2); }
+    .video-wrap {
+      background: #061018;
+      border: 1px solid rgba(245,197,24,0.25);
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+    .video-wrap video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    .section-label {
+      color: var(--gold);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 800px) { .grid-2 { grid-template-columns: 1fr; } }
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .card.terra { background: var(--cream); color: var(--forest); border-color: rgba(44,62,45,0.15); }
+    .card img { width: 100%; display: block; background: #0d1a28; }
+    .card .body { padding: 1.1rem 1.2rem 1.3rem; }
+    .card h3 { font-size: 1.15rem; margin-bottom: 0.35rem; }
+    .card p { font-size: 0.92rem; color: var(--steel); }
+    .card.terra p { color: #5a6b5c; }
+    .swatches {
+      display: flex; gap: 0.4rem; margin-top: 0.85rem; flex-wrap: wrap;
+    }
+    .swatch {
+      width: 28px; height: 28px; border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } }
+    .gallery figure {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .gallery img { width: 100%; display: block; }
+    .gallery figcaption {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.85rem;
+      color: var(--steel);
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--steel);
+      font-size: 0.85rem;
+    }
+    .meta {
+      margin-top: 2rem;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      background: rgba(245,197,24,0.06);
+      border: 1px solid rgba(245,197,24,0.2);
+      color: var(--steel);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-dot"></span> SOLARA</div>
+    <nav>
+      <a href="#directions">Directions</a>
+      <a href="#systems">Systems</a>
+      <a href="#applications">Applications</a>
+      <a href="https://github.com/angellllkr-eng/solara-brand-identity" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="section-label">Brand Identity Package</div>
+      <h1>Power Beyond<br /><span>the Horizon</span></h1>
+      <p>
+        Two complete, production-ready identity directions for a premium portable solar
+        energy & outdoor lifestyle brand — logos, palettes, type, and real application mockups.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#directions">View Directions</a>
+        <a class="btn btn-ghost" href="https://github.com/angellllkr-eng/solara-brand-identity" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+      <div class="meta">
+        Private package · Radiant Precision + Terra Lumen · Core systems + mockups + logo motion · 2026-09
+      </div>
+    </div>
+    <div class="video-wrap">
+      <video src="solara_logo_animation.mp4" autoplay muted loop playsinline poster="solara_dir1_logo_system.png"></video>
+    </div>
+  </div>
+
+  <section id="directions">
+    <div class="section-label">Two Directions</div>
+    <h2>Choose the system that fits the product line</h2>
+    <div class="grid-2">
+      <article class="card">
+        <img src="solara_dir1_logo_system.png" alt="Radiant Precision logo system" />
+        <div class="body">
+          <h3>1 · Radiant Precision</h3>
+          <p>Futuristic, exacting, high-performance. Geometric sun, navy + solar gold, Inter Display.</p>
+          <div class="swatches">
+            <div class="swatch" style="background:#0A1628"></div>
+            <div class="swatch" style="background:#F5C518"></div>
+            <div class="swatch" style="background:#FFFFFF;border-color:#333"></div>
+            <div class="swatch" style="background:#A8B5C4"></div>
+            <div class="swatch" style="background:#00D4FF"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card terra">
+        <img src="solara_dir2_logo_system.png" alt="Terra Lumen logo system" />
+        <div class="body">
+          <h3>2 · Terra Lumen</h3>
+          <p>Warm, organic luxury. Soft sun, forest + terracotta + cream, refined serif lockups.</p>
+          <div class="swatches">
+            <div class="swatch" style="background:#2C3E2D"></div>
+            <div class="swatch" style="background:#E8A87C"></div>
+            <div class="swatch" style="background:#F5E6D3;border-color:#c9b8a0"></div>
+            <div class="swatch" style="background:#C9A227"></div>
+            <div class="swatch" style="background:#A8B5A0"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="systems">
+    <div class="section-label">Core Systems</div>
+    <h2>Color & type for both directions</h2>
+    <div class="gallery">
+      <figure>
+        <img src="solara_dir1_color_palette.png" alt="Radiant Precision color palette" />
+        <figcaption>Radiant Precision — color system</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_dir2_color_palette.png" alt="Terra Lumen color palette" />
+        <figcaption>Terra Lumen — color system</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_dir1_typography.png" alt="Radiant Precision typography" />
+        <figcaption>Radiant Precision — type system</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_dir2_typography.png" alt="Terra Lumen typography" />
+        <figcaption>Terra Lumen — type system</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="applications">
+    <div class="section-label">Applications</div>
+    <h2>Mockups built from the core assets</h2>
+    <div class="gallery">
+      <figure>
+        <img src="solara_mockup_business_cards.png" alt="Business card mockups" />
+        <figcaption>Business cards — both directions</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_mockup_website_headers.png" alt="Website header mockups" />
+        <figcaption>Website hero headers</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_mockup_packaging.png" alt="Packaging mockups" />
+        <figcaption>Product packaging</figcaption>
+      </figure>
+      <figure>
+        <img src="solara_mockup_marketing_posters.png" alt="Marketing poster mockups" />
+        <figcaption>Marketing posters / social</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    SOLARA brand identity package · Exclusive to owner · Source:
+    <a href="https://github.com/angellllkr-eng/solara-brand-identity">angellllkr-eng/solara-brand-identity</a>
+  </footer>
+</body>
+</html>

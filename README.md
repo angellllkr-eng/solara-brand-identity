@@ -65,3 +65,22 @@ Two complete, production-ready brand identity directions with core visual system
 ---
 
 *Created September 2026*
+
+---
+
+## Live Showcase
+
+Static brand site: `index.html` (includes logo motion video).
+
+Open locally or deploy as static site (GitHub Pages / Vercel static).
+
+**Logo motion:** `solara_logo_animation.mp4` (6s, 560×560, loop-ready)
+
+## Status
+
+- [x] Two brand directions (Radiant Precision + Terra Lumen)
+- [x] Core systems: logo / color / type
+- [x] Application mockups: cards, web, packaging, posters
+- [x] Logo animation video
+- [x] Brand showcase HTML
+- [x] Private GitHub package: angellllkr-eng/solara-brand-identity
