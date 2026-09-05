@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-05T23:05:42Z",
+  "project": "solara-brand-identity",
+  "owner": "angellllkr-eng",
+  "repo_url": "https://github.com/angellllkr-eng/solara-brand-identity",
+  "private": true,
+  "head_sha": "0cd419222182800b8db50816e306f32a66b7d2a1",
+  "commits": ["f5d5e88", "0cd4192"],
+  "assets": [
+    "README.md",
+    "index.html",
+    "solara_logo_animation.mp4",
+    "solara_dir1_logo_system.png",
+    "solara_dir1_color_palette.png",
+    "solara_dir1_typography.png",
+    "solara_dir2_logo_system.png",
+    "solara_dir2_color_palette.png",
+    "solara_dir2_typography.png",
+    "solara_mockup_business_cards.png",
+    "solara_mockup_website_headers.png",
+    "solara_mockup_packaging.png",
+    "solara_mockup_marketing_posters.png"
+  ],
+  "animation_asset_id": "0e7c1eb7-479f-4582-8a55-86166a122276",
+  "verdicts": {
+    "github_push": "PROVEN-REMOTE",
+    "public_live_url": "BLOCKED-CREDENTIALS"
+  },
+  "blockers": ["vercel_hobby_200_limit", "github_pages_403_integration"]
+}
