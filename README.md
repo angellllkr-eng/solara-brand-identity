@@ -2,7 +2,7 @@
 
 **Premium portable solar energy & outdoor lifestyle brand**
 
-Two complete, production-ready brand identity directions with core visual systems, full typography systems, competitive type positioning, and application mockups.
+Two complete, production-ready brand identity directions with core visual systems, full typography systems, competitive type positioning, premium outdoor lifestyle board, and application mockups.
 
 ---
 
@@ -53,6 +53,17 @@ Category (Goal Zero · Jackery · EcoFlow · Bluetti · Anker SOLIX) is dominate
 
 ---
 
+## Premium Outdoor Lifestyle Positioning
+
+Terra Lumen is aligned with the premium outdoor lifestyle register (Patagonia, YETI, Peak Design, Arc’teryx) rather than pure technical power brands.
+
+- **Type map:** Closest to Patagonia (heritage serif + refined sans). Warmer and more organic than the rest of the set.
+- **Color principles:** Deep Forest anchors, Warm Cream breathes, Terracotta + Soft Gold used sparingly. Neutrals first; photography carries color.
+- **Photography principles:** Full-bleed, high-craft, quiet moments preferred. Texture, atmosphere, golden-hour light. Product lived-in.
+- **Dual use:** Radiant Precision for product/tech surfaces · Terra Lumen for lifestyle storytelling and brand moments.
+
+---
+
 ## Application Mockups
 
 | Mockup | File | Contents |
@@ -71,6 +82,7 @@ Category (Goal Zero · Jackery · EcoFlow · Bluetti · Anker SOLIX) is dominate
 Static brand site with:
 - Dual direction systems fully presented
 - Typography details + competitive positioning
+- Premium outdoor lifestyle positioning + principles
 - All mockups + logo motion
 - Exclusive ownership markers
 
@@ -84,6 +96,7 @@ Static brand site with:
 - [x] Core systems: logo / color / type
 - [x] Full typography systems documented
 - [x] Competitive type analysis integrated
+- [x] Premium outdoor lifestyle positioning + principles
 - [x] Application mockups: cards, web, packaging, posters
 - [x] Logo animation video
 - [x] Elevated brand showcase HTML
