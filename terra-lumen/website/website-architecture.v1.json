@@ -1,0 +1,68 @@
+{
+  "schema": "terra-lumen.website-architecture.v1",
+  "status": "verified",
+  "brand": "Terra Lumen",
+  "parent_system": "SOLARA",
+  "primary_journeys": [
+    "explorer_to_system_purchase",
+    "cabin_owner_to_consult_or_purchase",
+    "gift_buyer_to_lighting_or_soft_goods",
+    "retail_partner_to_wholesale_inquiry"
+  ],
+  "navigation": ["home", "systems", "seasonal", "stories", "where-to-buy", "journal", "support", "shop"],
+  "system_categories": ["panels", "power-cells", "lighting", "soft-goods-accessories", "compare-panels"],
+  "templates": ["home", "systems-listing", "product-detail", "seasonal-hub", "stories-journal", "where-to-buy", "support-docs", "checkout", "account"],
+  "content_types": [
+    "season",
+    "product",
+    "story",
+    "retail-partner",
+    "event",
+    "faq-doc",
+    "global-settings"
+  ],
+  "relationships": [
+    {"from": "product", "to": "season", "cardinality": "many-to-many"},
+    {"from": "story", "to": "product", "cardinality": "many-to-many"},
+    {"from": "event", "to": "retail-partner", "cardinality": "many-to-many"}
+  ],
+  "seasonal_tokens": {
+    "primary": "#2C3E2D",
+    "accent": "#E8A87C",
+    "background": "#F5E6D3",
+    "highlight": "#C9A227",
+    "support": "#A8B5A0"
+  },
+  "analytics_events": [
+    "view_item",
+    "compare_add",
+    "compare_remove",
+    "quiz_start",
+    "quiz_complete",
+    "add_to_cart",
+    "begin_checkout",
+    "purchase",
+    "demo_request",
+    "wholesale_inquiry",
+    "newsletter_signup",
+    "retail_locator_view"
+  ],
+  "seo": {
+    "structured_data": ["Product", "Article", "LocalBusiness"],
+    "canonical_variants": true,
+    "seasonal_archives": true,
+    "sitemap": true,
+    "robots": true,
+    "hreflang_when_multiregion": true
+  },
+  "quality_targets": {
+    "accessibility": "WCAG AA",
+    "performance_goal": "Lighthouse 90+",
+    "mobile_first": true,
+    "measured_before_release": true
+  },
+  "preferred_frontend": "Next.js/React",
+  "cms_options": ["Sanity", "Contentful"],
+  "commerce_options": ["Shopify headless", "Commerce Layer"],
+  "integration_policy": "No vendor is considered configured or live until independently verified."
+}
