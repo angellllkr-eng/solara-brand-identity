@@ -1,0 +1,23 @@
+{
+  "schema": "terra-lumen.website-sitemap.v1",
+  "status": "verified",
+  "routes": [
+    {"slug":"/","title":"Home","parent":null,"season_tags":["current"],"primary_cta":"Explore Systems"},
+    {"slug":"/systems","title":"Systems","parent":null,"season_tags":["current"],"primary_cta":"Compare Panels"},
+    {"slug":"/systems/:slug","title":"Product Detail","parent":"/systems","season_tags":["product"],"primary_cta":"Buy / Preorder"},
+    {"slug":"/season/:season","title":"Seasonal Hub","parent":null,"season_tags":["season"],"primary_cta":"Join Seasonal Waitlist"},
+    {"slug":"/stories","title":"Stories / Journal","parent":null,"season_tags":["editorial"],"primary_cta":"Read Hero Film"},
+    {"slug":"/where-to-buy","title":"Where to Buy","parent":null,"season_tags":["retail"],"primary_cta":"Find a Store"},
+    {"slug":"/support","title":"Support & Docs","parent":null,"season_tags":["support"],"primary_cta":"Get Support"},
+    {"slug":"/partners","title":"Wholesale / Partners","parent":null,"season_tags":["b2b"],"primary_cta":"Apply for Partnership"},
+    {"slug":"/account","title":"Account","parent":null,"season_tags":[],"primary_cta":"View Orders"},
+    {"slug":"/checkout","title":"Checkout","parent":null,"season_tags":[],"primary_cta":"Complete Purchase"}
+  ],
+  "relationships": {
+    "systems": ["/systems/:slug"],
+    "seasonal": ["/season/:season"],
+    "content": ["/stories"],
+    "retail": ["/where-to-buy","/partners"],
+    "commerce": ["/account","/checkout"]
+  }
+}
