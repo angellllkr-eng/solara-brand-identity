@@ -9,129 +9,23 @@
 <meta property="og:description" content="Radiant Precision · Terra Lumen — complete brand package"/>
 <meta property="og:type" content="website"/>
 <style>
-:root{
-  --bg:#070d18;--panel:#0d1c33;--line:#1e2a3d;
-  --gold:#F5C518;--navy:#0A1628;--fg:#f4f4f0;--muted:#9aa3b2;
-  --terra:#C45C26;--forest:#1B4332;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
-a{color:var(--gold);text-decoration:none}
-a:hover{text-decoration:underline}
-.nav{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center;justify-content:space-between;padding:.9rem 1.5rem;background:rgba(7,13,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.brand{font-weight:700;letter-spacing:.14em;font-size:.95rem}
-.nav-links{display:flex;flex-wrap:wrap;gap:.85rem;font-size:.8rem;color:var(--muted)}
-.nav-links a{color:var(--muted)}
-.nav-links a:hover{color:var(--gold)}
-.hero{padding:4rem 1.5rem 3rem;text-align:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,#13233f 0%,var(--bg) 65%)}
-.hero h1{margin:0;letter-spacing:.18em;font-weight:600;font-size:clamp(1.8rem,5vw,3rem)}
-.hero .tag{margin:.75rem 0 0;color:var(--gold);letter-spacing:.12em;font-size:.85rem;text-transform:uppercase}
-.hero .lede{max-width:42rem;margin:1.25rem auto 0;color:var(--muted);font-size:1.05rem}
-.hero-cta{margin-top:1.5rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:.65rem 1.1rem;border-radius:8px;border:1px solid var(--line);font-size:.85rem;letter-spacing:.04em}
-.btn-primary{background:var(--gold);color:#0A1628;border-color:var(--gold);font-weight:600}
-.btn-ghost{color:var(--fg)}
-main{max-width:1120px;margin:0 auto;padding:1.5rem}
-section{padding:2.5rem 0;border-bottom:1px solid var(--line)}
-section:last-child{border-bottom:0}
-h2{margin:0 0 .35rem;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
-h3{margin:.25rem 0 1rem;font-size:1.45rem;font-weight:600}
-.sub{color:var(--muted);margin:0 0 1.25rem;max-width:40rem}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.g-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
-figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-figure img,figure video{width:100%;display:block;background:#000}
-figcaption{padding:.7rem .95rem;font-size:.8rem;color:var(--muted)}
-.pill{display:inline-block;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--line);font-size:.7rem;letter-spacing:.06em;color:var(--muted);margin-right:.35rem}
-.dir-a h2,.dir-a .accent{color:var(--gold)}
-.dir-b h2,.dir-b .accent{color:#e08a5a}
-.motion-hero video{max-height:520px;object-fit:contain;margin:0 auto}
-.footer{text-align:center;padding:2.5rem 1rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}
-.meta{font-size:.75rem;color:var(--muted);margin-top:1rem}
-@media (max-width:640px){.hero{padding:2.5rem 1rem}}
+:root{--bg:#070d18;--panel:#0d1c33;--line:#1e2a3d;--gold:#F5C518;--navy:#0A1628;--fg:#f4f4f0;--muted:#9aa3b2;--terra:#C45C26;--forest:#1B4332}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+.nav{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center;justify-content:space-between;padding:.9rem 1.5rem;background:rgba(7,13,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.brand{font-weight:700;letter-spacing:.14em;font-size:.95rem}.nav-links{display:flex;flex-wrap:wrap;gap:.85rem;font-size:.8rem;color:var(--muted)}.nav-links a{color:var(--muted)}.nav-links a:hover{color:var(--gold)}
+.hero{padding:4rem 1.5rem 3rem;text-align:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,#13233f 0%,var(--bg) 65%)}.hero h1{margin:0;letter-spacing:.18em;font-weight:600;font-size:clamp(1.8rem,5vw,3rem)}.hero .tag{margin:.75rem 0 0;color:var(--gold);letter-spacing:.12em;font-size:.85rem;text-transform:uppercase}.hero .lede{max-width:42rem;margin:1.25rem auto 0;color:var(--muted);font-size:1.05rem}.hero-cta{margin-top:1.5rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}.btn{display:inline-block;padding:.65rem 1.1rem;border-radius:8px;border:1px solid var(--line);font-size:.85rem;letter-spacing:.04em}.btn-primary{background:var(--gold);color:#0A1628;border-color:var(--gold);font-weight:600}.btn-ghost{color:var(--fg)}
+main{max-width:1120px;margin:0 auto;padding:1.5rem}section{padding:2.5rem 0;border-bottom:1px solid var(--line)}section:last-child{border-bottom:0}h2{margin:0 0 .35rem;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}h3{margin:.25rem 0 1rem;font-size:1.45rem;font-weight:600}.sub{color:var(--muted);margin:0 0 1.25rem;max-width:40rem}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}.g-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}figure img,figure video{width:100%;display:block;background:#000}figcaption{padding:.7rem .95rem;font-size:.8rem;color:var(--muted)}.pill{display:inline-block;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--line);font-size:.7rem;letter-spacing:.06em;color:var(--muted);margin-right:.35rem}.dir-a h2,.dir-a .accent{color:var(--gold)}.dir-b h2,.dir-b .accent{color:#e08a5a}.motion-hero video{max-height:520px;object-fit:contain;margin:0 auto}.footer{text-align:center;padding:2.5rem 1rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}.meta{font-size:.75rem;color:var(--muted);margin-top:1rem}
+.watch{max-width:1120px;margin:0 auto;padding:0 1.5rem 2rem}.watch-card{border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.3rem;background:linear-gradient(135deg,#101f36,#0d1728);display:flex;align-items:center;justify-content:space-between;gap:1rem}.watch-card p{margin:.25rem 0 0;color:var(--muted);font-size:.85rem}.watch-link{white-space:nowrap;background:var(--gold);color:#0A1628;padding:.6rem .9rem;border-radius:8px;font-size:.8rem;font-weight:650}
+@media(max-width:640px){.hero{padding:2.5rem 1rem}.watch{padding:0 1rem 1rem}.watch-card{align-items:flex-start;flex-direction:column}.watch-link{white-space:normal}}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="brand">SOLARA</div>
-  <div class="nav-links">
-    <a href="#motion">Motion</a>
-    <a href="#precision">Radiant Precision</a>
-    <a href="#terra">Terra Lumen</a>
-    <a href="#applications">Applications</a>
-    <a href="https://github.com/angellllkr-eng/solara-brand-identity">GitHub</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <h1>SOLARA</h1>
-  <p class="tag">Brand identity system · dual direction</p>
-  <p class="lede">Two complete visual systems — <strong style="color:#F5C518">Radiant Precision</strong> (void navy + radiant gold) and <strong style="color:#e08a5a">Terra Lumen</strong> (forest + terracotta) — with logos, palettes, type, mockups, and motion.</p>
-  <div class="hero-cta">
-    <a class="btn btn-primary" href="#motion">Watch motion</a>
-    <a class="btn btn-ghost" href="https://github.com/angellllkr-eng/solara-brand-identity">View on GitHub</a>
-  </div>
-  <p class="meta">A11-K / Mind-Reply · production target: ResellerPro</p>
-</header>
-
+<nav class="nav"><div class="brand">SOLARA</div><div class="nav-links"><a href="#motion">Motion</a><a href="#precision">Radiant Precision</a><a href="#terra">Terra Lumen</a><a href="#applications">Applications</a><a href="industrial-watch/">Industrial Watch</a><a href="https://github.com/angellllkr-eng/solara-brand-identity">GitHub</a></div></nav>
+<header class="hero"><h1>SOLARA</h1><p class="tag">Brand identity system · dual direction</p><p class="lede">Two complete visual systems — <strong style="color:#F5C518">Radiant Precision</strong> (void navy + radiant gold) and <strong style="color:#e08a5a">Terra Lumen</strong> (forest + terracotta) — with logos, palettes, type, mockups, and motion.</p><div class="hero-cta"><a class="btn btn-primary" href="#motion">Watch motion</a><a class="btn btn-ghost" href="https://github.com/angellllkr-eng/solara-brand-identity">View on GitHub</a></div><p class="meta">A11-K / Mind-Reply · production target: ResellerPro</p></header>
+<div class="watch"><div class="watch-card"><div><strong>A11K Industrial Watch</strong><p>Public-market watching brief · 9 September 2026 · Units 1–7, programme and power.</p></div><a class="watch-link" href="industrial-watch/">Open watching brief →</a></div></div>
 <main>
-  <section id="motion" class="motion-hero">
-    <h2>Motion</h2>
-    <h3>Logo system in motion</h3>
-    <p class="sub">Cinematic brand reveal of the Radiant Precision logo board — icon pulse, lockups, monogram, reverse applications.</p>
-    <div class="g-2">
-      <figure>
-        <video src="solara_logo_system_motion.mp4" controls autoplay loop muted playsinline></video>
-        <figcaption><span class="pill">NEW</span> Full logo system · 6s</figcaption>
-      </figure>
-      <figure>
-        <video src="solara_logo_icon_motion.mp4" controls loop muted playsinline></video>
-        <figcaption>Icon / mark motion loop</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="precision" class="dir-a">
-    <h2>Direction 01</h2>
-    <h3>Radiant Precision</h3>
-    <p class="sub">Tech-minimal. Void Navy + Radiant Gold. Geometric sun with alternating rays — lockups, monogram, reverse for dark UI.</p>
-    <div class="g">
-      <figure><img src="solara_dir1_logo_system.png" alt="Radiant Precision logo system" loading="lazy"/><figcaption>Logo system</figcaption></figure>
-      <figure><img src="solara_dir1_color_palette.png" alt="Radiant Precision color palette" loading="lazy"/><figcaption>Color palette</figcaption></figure>
-      <figure><img src="solara_dir1_typography.png" alt="Radiant Precision typography" loading="lazy"/><figcaption>Typography</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="terra" class="dir-b">
-    <h2>Direction 02</h2>
-    <h3>Terra Lumen</h3>
-    <p class="sub">Organic-luxury. Forest + Terracotta. Soft sun mark, humanist serif system for premium packaging and editorial.</p>
-    <div class="g">
-      <figure><img src="solara_dir2_logo_system.png" alt="Terra Lumen logo system" loading="lazy"/><figcaption>Logo system</figcaption></figure>
-      <figure><img src="solara_dir2_color_palette.png" alt="Terra Lumen color palette" loading="lazy"/><figcaption>Color palette</figcaption></figure>
-      <figure><img src="solara_dir2_typography.png" alt="Terra Lumen typography" loading="lazy"/><figcaption>Typography</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="applications">
-    <h2>Applications</h2>
-    <h3>Real-world mockups</h3>
-    <p class="sub">Business cards, website headers, packaging, and marketing posters across both directions.</p>
-    <div class="g">
-      <figure><img src="solara_mockup_business_cards.png" alt="Business cards" loading="lazy"/><figcaption>Business cards</figcaption></figure>
-      <figure><img src="solara_mockup_website_headers.png" alt="Website headers" loading="lazy"/><figcaption>Website headers</figcaption></figure>
-      <figure><img src="solara_mockup_packaging.png" alt="Packaging" loading="lazy"/><figcaption>Packaging</figcaption></figure>
-      <figure><img src="solara_mockup_marketing_posters.png" alt="Marketing posters" loading="lazy"/><figcaption>Marketing posters</figcaption></figure>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div>SOLARA · dual brand identity · A11-K / Mind-Reply</div>
-  <div style="margin-top:.5rem">
-    <a href="https://github.com/angellllkr-eng/solara-brand-identity">github.com/angellllkr-eng/solara-brand-identity</a>
-  </div>
-</footer>
-</body>
-</html>
+<section id="motion" class="motion-hero"><h2>Motion</h2><h3>Logo system in motion</h3><p class="sub">Cinematic brand reveal of the Radiant Precision logo board — icon pulse, lockups, monogram, reverse applications.</p><div class="g-2"><figure><video src="solara_logo_system_motion.mp4" controls autoplay loop muted playsinline></video><figcaption><span class="pill">NEW</span> Full logo system · 6s</figcaption></figure><figure><video src="solara_logo_icon_motion.mp4" controls loop muted playsinline></video><figcaption>Icon / mark motion loop</figcaption></figure></div></section>
+<section id="precision" class="dir-a"><h2>Direction 01</h2><h3>Radiant Precision</h3><p class="sub">Tech-minimal. Void Navy + Radiant Gold. Geometric sun with alternating rays — lockups, monogram, reverse for dark UI.</p><div class="g"><figure><img src="solara_dir1_logo_system.png" alt="Radiant Precision logo system" loading="lazy"/><figcaption>Logo system</figcaption></figure><figure><img src="solara_dir1_color_palette.png" alt="Radiant Precision color palette" loading="lazy"/><figcaption>Color palette</figcaption></figure><figure><img src="solara_dir1_typography.png" alt="Radiant Precision typography" loading="lazy"/><figcaption>Typography</figcaption></figure></div></section>
+<section id="terra" class="dir-b"><h2>Direction 02</h2><h3>Terra Lumen</h3><p class="sub">Organic-luxury. Forest + Terracotta. Soft sun mark, humanist serif system for premium packaging and editorial.</p><div class="g"><figure><img src="solara_dir2_logo_system.png" alt="Terra Lumen logo system" loading="lazy"/><figcaption>Logo system</figcaption></figure><figure><img src="solara_dir2_color_palette.png" alt="Terra Lumen color palette" loading="lazy"/><figcaption>Color palette</figcaption></figure><figure><img src="solara_dir2_typography.png" alt="Terra Lumen typography" loading="lazy"/><figcaption>Typography</figcaption></figure></div></section>
+<section id="applications"><h2>Applications</h2><h3>Real-world mockups</h3><p class="sub">Business cards, website headers, packaging, and marketing posters across both directions.</p><div class="g"><figure><img src="solara_mockup_business_cards.png" alt="Business cards" loading="lazy"/><figcaption>Business cards</figcaption></figure><figure><img src="solara_mockup_website_headers.png" alt="Website headers" loading="lazy"/><figcaption>Website headers</figcaption></figure><figure><img src="solara_mockup_packaging.png" alt="Packaging" loading="lazy"/><figcaption>Packaging</figcaption></figure><figure><img src="solara_mockup_marketing_posters.png" alt="Marketing posters" loading="lazy"/><figcaption>Marketing posters</figcaption></figure></div></section>
+</main><footer class="footer"><div>SOLARA · dual brand identity · A11-K / Mind-Reply</div><div style="margin-top:.5rem"><a href="https://github.com/angellllkr-eng/solara-brand-identity">github.com/angellllkr-eng/solara-brand-identity</a></div></footer>
+</body></html>
