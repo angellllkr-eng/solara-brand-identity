@@ -1,0 +1,14 @@
+{
+  "schema": "terra-lumen.seasonal-campaign.v1",
+  "status": "verified",
+  "brand": "Terra Lumen",
+  "seasons": [
+    {"id":"spring","campaign":"Rise With the Light","palette":["cream","sage","soft_gold"],"products":["TL-40","TL-Glow Lantern","TL-Carry"],"retail":"Spring Rise"},
+    {"id":"summer","campaign":"Drift With the Sun","palette":["terracotta","cream","warm_gold"],"products":["TL-80","TL-Cell Standard","TL-Seasonal String Lights"],"retail":"Summer Drift"},
+    {"id":"autumn","campaign":"Quiet the Light","palette":["deep_forest","terracotta","soft_gold"],"products":["TL-120","TL-Cell Reserve","TL-Path Lights"],"retail":"Autumn Quiet"},
+    {"id":"winter","campaign":"Glow Through the Dark","palette":["cream","deep_forest","minimal_gold"],"products":["TL-120 Winter Edition","TL-Cell Reserve","TL-Glow Lantern Winter Glow"],"retail":"Winter Glow"}
+  ],
+  "content_layers":["hero_story","micro_stories","product_stories"],
+  "channels":["brand","retail","product","social","partnerships","content"],
+  "release_gate":["narrative","visual_tokens","sku_mapping","retail_assets","content_briefs","partnership_targets","social_cadence","merchandising_guidance"]
+}
