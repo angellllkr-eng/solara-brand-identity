@@ -1,0 +1,31 @@
+{
+  "schema": "terra-lumen.clickable-sitemap.v1",
+  "brand": "Terra Lumen",
+  "status": "verified",
+  "routes": [
+    {"slug":"/","title":"Home","parent":null,"purpose":"Seasonal entry and product/story routing","primary_cta":"Explore Systems","children":["/systems","/season/:season","/stories","/where-to-buy"]},
+    {"slug":"/systems","title":"Systems","parent":"/","purpose":"Browse product families and compare","primary_cta":"Compare Panels","children":["/systems/:slug"]},
+    {"slug":"/systems/:slug","title":"Product Detail","parent":"/systems","purpose":"Product narrative, specifications and purchase","primary_cta":"Buy / Preorder","data":["product_id","sku","gtin","price","inventory_status","lead_time","season_tags","materials","warranty_period","repairability_score","downloads"]},
+    {"slug":"/season/:season","title":"Seasonal","parent":"/","purpose":"Seasonal chapter, drops, events and partners","primary_cta":"Join Seasonal Waitlist","data":["season_id","hero_media_id","manifesto","featured_products","events","partners"]},
+    {"slug":"/stories","title":"Stories / Journal","parent":"/","purpose":"Films, editorial and field stories","primary_cta":"Read Hero Film","filters":["place","product","creator","season"]},
+    {"slug":"/where-to-buy","title":"Where to Buy","parent":"/","purpose":"Retail and pop-up discovery","primary_cta":"Find a Store","filters":["pop-up","partner","flagship"]},
+    {"slug":"/support","title":"Support & Docs","parent":"/","purpose":"Knowledge base, downloads, warranty and support","primary_cta":"Get Support"},
+    {"slug":"/partners","title":"Wholesale / Partners","parent":"/","purpose":"B2B partnership discovery and inquiry","primary_cta":"Apply for Partnership"},
+    {"slug":"/account","title":"Account","parent":"/","purpose":"Orders, downloads, warranty and saved setups","primary_cta":"View Orders"},
+    {"slug":"/checkout","title":"Checkout","parent":"/account","purpose":"Progressive purchase flow","primary_cta":"Complete Purchase"}
+  ],
+  "relationships": {
+    "product_to_season": "many-to-many",
+    "story_to_product": "many-to-many",
+    "event_to_partner": "many-to-many"
+  },
+  "season_tags": ["spring","summer","autumn","winter"],
+  "primary_ctas": ["Explore Systems","Compare Panels","Buy / Preorder","Join Seasonal Waitlist","Read Hero Film","Find a Store","Get Support","Apply for Partnership","Complete Purchase"],
+  "implementation_notes": {
+    "seasonal_theming": "CSS custom properties driven by Season data",
+    "compare_persistence": "localStorage",
+    "seo": "Product, Article and LocalBusiness structured data where applicable",
+    "responsive": "mobile-first; desktop/tablet/mobile variants",
+    "vendor_status": "Unconfigured until independently verified"
+  }
+}
