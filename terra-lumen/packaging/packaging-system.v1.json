@@ -1,0 +1,33 @@
+{
+  "schema": "terra-lumen.packaging.v1",
+  "status": "verified",
+  "brand": "Terra Lumen",
+  "parent_identity": "SOLARA",
+  "colors": {
+    "warm_cream": "#F5E6D3",
+    "deep_forest": "#2C3E2D",
+    "terracotta": "#E8A87C",
+    "soft_gold": "#C9A227",
+    "sage_mist": "#A8B5A0"
+  },
+  "materials": {
+    "primary": ["uncoated warm cream stock", "deep forest recycled board", "terracotta edge paint", "soft gold foil", "sage mist molded pulp"],
+    "secondary": ["cotton pull tabs", "matte kraft sleeves", "forest hemp twine", "soft gold metal rivets"]
+  },
+  "families": {
+    "core_energy_units": {"skus": ["TL-40", "TL-80", "TL-120"], "outer": ["warm_cream", "deep_forest", "soft_gold", "terracotta"], "inner": ["sage_mist", "deep_forest", "terracotta"]},
+    "power_storage": {"skus": ["Mini", "Standard", "Reserve"], "outer": ["deep_forest", "soft_gold", "warm_cream", "terracotta"], "inner": ["warm_cream", "sage_mist", "soft_gold"]},
+    "lighting": {"skus": ["Glow", "Path", "Seasonal String"], "outer": ["warm_cream", "terracotta", "soft_gold", "deep_forest"], "inner": ["sage_mist", "deep_forest", "terracotta"]},
+    "soft_goods": {"skus": ["Carry", "Strap", "Case"], "outer": ["matte_kraft", "deep_forest", "soft_gold", "terracotta"], "inner": ["warm_cream", "sage_mist", "forest_twine"]}
+  },
+  "seasons": {
+    "spring": ["warm_cream", "sage_mist", "soft_gold"],
+    "summer": ["terracotta", "warm_cream", "soft_gold"],
+    "autumn": ["deep_forest", "terracotta", "soft_gold"],
+    "winter": ["warm_cream", "deep_forest", "sage_mist"]
+  },
+  "label_hierarchy": ["product_name", "tagline", "specs", "sku_serial", "care_instructions"],
+  "sku_format": "TL-[FAMILY]-[SIZE]-PKG1",
+  "physical_hierarchy": ["unit_package", "inner_pack", "master_carton", "pallet"],
+  "release_gate": ["dieline", "artwork", "materials", "proof", "labeling", "logistics_mapping"]
+}
