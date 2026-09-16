@@ -1,0 +1,34 @@
+name: Quality Gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  mergeability:
+    name: Mergeability / production quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate static site contract
+        run: node scripts/validate-solara.mjs
+
+      - name: Check for accidental credential material
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nE '(CLOUDFLARE_API_TOKEN|CLOUDFLARE_ACCOUNT_ID|STRIPE_SECRET_KEY|STRIPE_WEBHOOK_SECRET|LAUNCHER_PRIVATE_KEY)\s*[:=]\s*["'"'][^"'"']+' -- ':!CLOUDFLARE_DEPLOYMENT.md' ':!*.md'; then
+            echo 'Potential credential material detected in tracked source.'
+            exit 1
+          fi
+
+      - name: Report mergeability result
+        run: echo 'FrontierCode-inspired mergeability gate passed.'
