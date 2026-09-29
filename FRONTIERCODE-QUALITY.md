@@ -20,7 +20,7 @@ When working on a bug or change, derive the implementation from the current Sola
 
 ## Release status
 
-Passing this workflow proves repository-local quality gates only. It does **not** prove that the Cloudflare production deployment or production domain is live. Production remains **UNVERIFIED** until the deployment contract's external verification gates are independently checked.
+Passing this workflow proves repository-local quality gates only. It does **not** prove that the Cloudflare production deployment or production domain is live. Production remains **pending_evidence** until the deployment contract's external verification gates are independently checked.
 
 ## Why this exists
 
