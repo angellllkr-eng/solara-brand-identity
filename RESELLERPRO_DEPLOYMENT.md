@@ -36,7 +36,7 @@ A release is **VERIFIED** only after the ResellerPro deployment itself is reacha
 8. Canonical URL points to the actual production domain.
 9. No production route depends on Vercel.
 
-Until those checks are performed against the actual ResellerPro deployment, production status remains **UNVERIFIED**.
+Until those checks are performed against the actual ResellerPro deployment, production status remains **pending_evidence**.
 
 ## Provider boundary
 
