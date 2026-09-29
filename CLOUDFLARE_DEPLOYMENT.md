@@ -44,7 +44,7 @@ A release is **VERIFIED** only after the Cloudflare deployment is reachable over
 9. No production route depends on Vercel or ResellerPro.
 10. GitHub Actions reports a successful deployment.
 
-Until the actual Cloudflare deployment and domain are checked, production status remains **UNVERIFIED**.
+Until the actual Cloudflare deployment and domain are checked, production status remains **pending_evidence**.
 
 ## Historical provider records
 
