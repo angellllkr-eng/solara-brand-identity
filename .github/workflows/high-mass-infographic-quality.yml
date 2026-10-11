@@ -25,9 +25,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Check whitespace
-        run: git diff --check
+      - name: Check whitespace in project changes
+        run: git diff --check origin/main...HEAD
 
       - name: Validate project content
         run: node scripts/validate-high-mass-infographic.mjs
