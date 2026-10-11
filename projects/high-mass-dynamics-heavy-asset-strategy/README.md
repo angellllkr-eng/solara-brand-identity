@@ -40,6 +40,11 @@ Use SOLARA's premium editorial discipline, not its product/commerce imagery: war
 
 ## Files
 
-- `design/infographic-draft.svg` — editable vector draft.
+- `design/infographic-draft.svg` — editable desktop vector draft.
+- `design/infographic-mobile.svg` — mobile-first vector variant designed around a 390 px viewport.
 - `design/product-design-brief.md` — composition and acceptance criteria.
-- `research/claim-source-audit.md` — claim-by-claim research record.
+- `research/claim-source-audit.md` — claim-by-claim research record and dated source recheck.
+- `scripts/validate-high-mass-infographic.mjs` — dependency-free static consistency checks.
+- `.github/workflows/high-mass-infographic-quality.yml` — path-scoped PR/push quality gate; it does not deploy the site.
+
+- `qa/verification-record-2026-10-11.md` — source review, current CI evidence, limitations, and release gates.

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="3300" viewBox="0 0 780 3300" role="img" aria-labelledby="title desc">
+<title id="title">High-Mass Dynamics &amp; Heavy Asset Strategy — mobile infographic</title>
+<desc id="desc">Mobile-first editorial infographic. Vehicle specifications, a simplified heavy-vehicle stopping model, and dated fixed-income index observations are presented in distinct sections.</desc>
+<defs>
+<style>
+.bg{fill:#f5f1e8}.ink{fill:#20231f}.muted{fill:#686b63}.gold{fill:#b88736}.rule{stroke:#d3cbbb;stroke-width:2}.panel{fill:#fffdf8;stroke:#d8d0c2;stroke-width:2}
+.kicker{font:700 22px Arial,sans-serif;letter-spacing:3px}.hero{font:700 66px Arial,sans-serif;letter-spacing:-1px}.sub{font:400 28px Arial,sans-serif}.h2{font:700 34px Arial,sans-serif}.h3{font:700 29px Arial,sans-serif}.body{font:400 27px Arial,sans-serif}.small{font:400 22px Arial,sans-serif}.num{font:700 64px Arial,sans-serif;letter-spacing:-1px}.label{font:700 21px Arial,sans-serif;letter-spacing:1px}
+</style>
+</defs>
+<rect class="bg" width="780" height="3300"/>
+<rect x="48" y="60" width="56" height="7" class="gold"/>
+<text x="48" y="112" class="kicker ink">ENGINEERING / RISK / EVIDENCE</text>
+<text x="48" y="206" class="hero ink">HIGH-MASS</text>
+<text x="48" y="284" class="hero ink">DYNAMICS</text>
+<text x="48" y="356" class="h2 gold">&amp; HEAVY ASSET</text>
+<text x="48" y="402" class="h2 gold">STRATEGY</text>
+<text x="48" y="456" class="sub muted">Mass changes the system.</text>
+<text x="48" y="494" class="sub muted">Evidence changes the decision.</text>
+<line x1="48" y1="536" x2="732" y2="536" class="rule"/>
+<text x="48" y="584" class="kicker muted">01 / PERFORMANCE ENGINEERING</text>
+<rect x="48" y="612" width="684" height="400" rx="22" class="panel"/>
+<text x="78" y="662" class="label gold">PORSCHE · FLACHBAU RS · 2026 ONE-OFF</text>
+<text x="78" y="746" class="num ink">554 kg</text>
+<text x="78" y="792" class="h3 ink">Rear-axle downforce</text>
+<text x="78" y="832" class="body muted">At 340 km/h / 211 mph</text>
+<text x="78" y="870" class="body muted">High Downforce setting</text>
+<line x1="78" y1="902" x2="702" y2="902" class="rule"/>
+<text x="78" y="944" class="small ink">Specific to a customer-built 991.2 911 GT2 RS.</text>
+<text x="78" y="976" class="small ink">Not a generic Porsche or total-downforce figure.</text>
+<rect x="48" y="1036" width="684" height="300" rx="22" class="panel"/>
+<text x="78" y="1086" class="label gold">LAMBORGHINI · TEMERARIO</text>
+<text x="78" y="1165" class="num ink">1,690 kg</text>
+<text x="78" y="1207" class="h3 ink">Dry weight · 2026 brochure</text>
+<text x="78" y="1250" class="body muted">Dry weight is not curb weight.</text>
+<text x="78" y="1288" class="small muted">Market / specification applicability should be checked.</text>
+<rect x="48" y="1360" width="684" height="300" rx="22" class="panel"/>
+<text x="78" y="1410" class="label gold">ASTON MARTIN · VALHALLA</text>
+<text x="78" y="1489" class="num ink">12 kg</text>
+<text x="78" y="1531" class="h3 ink">Unsprung-mass reduction</text>
+<text x="78" y="1574" class="body muted">Optional magnesium wheels.</text>
+<text x="78" y="1612" class="small muted">Component-level saving, not vehicle mass reduction.</text>
+<text x="48" y="1710" class="kicker muted">02 / HEAVY-VEHICLE STOPPING MODEL</text>
+<rect x="48" y="1738" width="684" height="430" rx="22" class="panel"/>
+<text x="78" y="1808" class="h2 ink">d ≈ v tᵣ + v² / (2 μ g)</text>
+<text x="78" y="1862" class="body ink">Reaction distance + idealized</text>
+<text x="78" y="1900" class="body ink">braking distance on level road.</text>
+<line x1="78" y1="1934" x2="702" y2="1934" class="rule"/>
+<text x="78" y="1978" class="small muted">v = initial speed (m/s)</text>
+<text x="78" y="2012" class="small muted">tᵣ = perception / reaction time</text>
+<text x="78" y="2046" class="small muted">μ = assumed tyre–road friction</text>
+<text x="78" y="2080" class="small muted">g = gravitational acceleration</text>
+<text x="78" y="2120" class="small ink">Not a certification or safety calculator.</text>
+<text x="48" y="2244" class="kicker muted">03 / FIXED-INCOME CONTEXT</text>
+<text x="48" y="2280" class="small muted">U.S. index yields reported as of 31 Mar 2026</text>
+<rect x="48" y="2310" width="684" height="250" rx="22" class="panel"/>
+<text x="78" y="2364" class="label gold">CMBS · INVESTMENT GRADE</text>
+<text x="78" y="2440" class="num ink">≈ 4.65%</text>
+<text x="78" y="2482" class="body ink">Bloomberg U.S. CMBS IG Index</text>
+<text x="78" y="2524" class="small muted">Capital Group; sources: Bloomberg / J.P. Morgan</text>
+<rect x="48" y="2580" width="684" height="250" rx="22" class="panel"/>
+<text x="78" y="2634" class="label gold">ABS · ASSET-BACKED SECURITIES</text>
+<text x="78" y="2710" class="num ink">≈ 4.40%</text>
+<text x="78" y="2752" class="body ink">Bloomberg U.S. ABS Index</text>
+<text x="78" y="2794" class="small muted">Capital Group; sources: Bloomberg / J.P. Morgan</text>
+<line x1="48" y1="2872" x2="732" y2="2872" class="rule"/>
+<text x="48" y="2920" class="body ink">Historical index observations, not live quotes,</text>
+<text x="48" y="2958" class="body ink">forecasts or guaranteed returns.</text>
+<text x="48" y="3010" class="small muted">Braking model is simplified. Real outcomes depend on</text>
+<text x="48" y="3042" class="small muted">load, grade, brakes, tyres, surface and conditions.</text>
+<text x="48" y="3096" class="small muted">Sources: Porsche Newsroom · Lamborghini 2026 brochure</text>
+<text x="48" y="3128" class="small muted">Aston Martin Valhalla · Capital Group · FHWA Module 7</text>
+<text x="48" y="3192" class="label gold">REVIEW DRAFT · 2026-10-11</text>
+</svg>

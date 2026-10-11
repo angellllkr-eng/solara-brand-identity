@@ -1,0 +1,35 @@
+name: High-Mass Infographic Quality Gate
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "projects/high-mass-dynamics-heavy-asset-strategy/**"
+      - "scripts/validate-high-mass-infographic.mjs"
+      - ".github/workflows/high-mass-infographic-quality.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "projects/high-mass-dynamics-heavy-asset-strategy/**"
+      - "scripts/validate-high-mass-infographic.mjs"
+      - ".github/workflows/high-mass-infographic-quality.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  infographic-quality:
+    name: Infographic contract and source-register checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check whitespace in project changes
+        run: git diff --check origin/main...HEAD
+
+      - name: Validate project content
+        run: node scripts/validate-high-mass-infographic.mjs
