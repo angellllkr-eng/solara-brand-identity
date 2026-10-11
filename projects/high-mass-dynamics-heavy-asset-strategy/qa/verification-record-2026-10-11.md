@@ -8,7 +8,8 @@
 - Current `main` merge commit at inspection: `fe171ced9d861de96e731502e0429d4d1f829bff`.
 - Existing project PR #4 was already merged at 2026-10-11 06:00:42 UTC. That merge occurred before this follow-up work; it was not performed by this branch.
 - PR #4's changed-file list was limited to the four files under `projects/high-mass-dynamics-heavy-asset-strategy/`. No root entrypoint, existing site brand assets, or workflow files were part of PR #4.
-- A push-triggered Cloudflare deployment workflow was launched after the merge and ended `failure` (run 38116654086). The Quality Gate (38116654121) and Repository Integrity Gate (38116654081) also ended `failure`. The available GitHub responses exposed no step records, so these results do not establish that the code steps ran or identify a root cause. Do not label CI as passed.
+- A push-triggered Cloudflare deployment workflow was launched after the merge and ended `failure` (run 38116654086). The Quality Gate (38116654121) and Repository Integrity Gate (38116654081) also ended `failure`. Their job responses contained zero step records. A request for the deployment job log returned `BlobNotFound`, so these results do not establish that the code steps ran or identify a root cause. Do not label CI as passed.
+- The follow-up PR #5 triggered the existing Quality Gate (run 38117200138), Repository Integrity Gate (38117200145), and the new infographic quality gate (run 38117200118). All ended `failure` with zero step records; the new quality-gate job-log request also returned `BlobNotFound`. The new validator is therefore **not verified as executed by GitHub Actions**.
 - No deployment was dispatched from this follow-up branch. No merge was performed from this follow-up branch.
 
 ## Source review performed
