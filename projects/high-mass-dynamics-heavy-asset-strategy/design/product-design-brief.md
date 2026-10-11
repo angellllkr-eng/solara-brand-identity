@@ -21,9 +21,15 @@
 - Show CMBS 4.65% and ABS 4.40% as approximate U.S. index yields reported as of 2026-03-31; no promise or forecast.
 - Present braking formula as a simplified idealized model only; explain variables and do not claim it certifies heavy-freight safety.
 
+## Responsive deliverables
+- `infographic-draft.svg` is the 1200 × 1800 desktop / high-resolution master.
+- `infographic-mobile.svg` is a 780 × 3300 mobile-first reading layout. At a 390 CSS-pixel viewport it scales to 50%; nominal type is at least 21 SVG px (about 10.5 CSS px before browser/device scaling).
+- The mobile variant is deliberately longer and stacks the automotive, braking and market panels to preserve a clear reading order.
+
 ## Acceptance criteria
-- SVG opens in a modern browser and remains editable as vector art.
-- All claims map to the audit file and a working source URL.
+- Both SVGs open in a modern browser and remain editable as vector art.
+- Both carry an accessible title and description.
+- All claims map to the audit file and a primary source URL.
 - Figures retain units and qualifiers when viewed independently.
-- At 390 px viewport, no text overlaps and source notes remain legible.
-- No changes to root `index.html`, existing brand assets, Cloudflare configuration or deployment workflow.
+- At 390 px viewport, the mobile variant has no overlaps or clipping and source notes remain legible; actual browser rendering still requires visual inspection.
+- No changes to root `index.html`, existing brand assets, Cloudflare configuration or production deployment workflow.
